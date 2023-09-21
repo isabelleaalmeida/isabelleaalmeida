@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    
+}
+
+body{
+   /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);*/
+    font-size: 100%;
+    background-color: black;
+
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0 0 10px #cccccc;
+    transform: scale(1.08);
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: auto;
+    padding: 40px 4%;
+}
+.logo{
+    width: 200px;
+    height: 200px; 
+    border-radius: 40%;   
+          
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Estiloo cabeçalho */
+
+
+
+header a{
+    color: #fff2e73a;
+    display: inline-block;
+    transition: 0.2s;
+
+    
+}
+
+header a:hover{
+    color: #fff2e7;
+    transform: scale(1.08);
+    
+}
+
+header nav ul{
+     list-style-type:none;
+     
+    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:20px 40px;
+    font-size: 20px;
+}
+/* parte central */
+
+.bella{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.destaque{
+   /* border-top: 0.6px solid #FFF2E7;*/
+    margin-bottom: 48px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+.name-destaque{
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFF2E7;
+}
+
+.subtitulo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.btn-contato{
+    padding: 10px 40px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
+
+.desenho{
+    width: 28vw;
+    height: 60vh;
+    padding: 18px;
+    border-radius: 25%;
+}
+
+ .destaque .bella img{
+    position: relative;
+    animation: flutuar 2s;
+    
+    
+}
+
+@keyframes flut{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.especialidades{
+    padding: 40px 4%;
+    color: #FFF2E7;
+    margin-bottom: 80px;
+}
+
+.especialidades .card-box i{
+    font-size: 48px;
+}
+
+.flex{
+    margin: 0 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* Seção2 */
+ .img-sobre img{
+    width: 28vw;
+    height: 60vh;
+    padding: 18px;
+    border-radius: 15%;
+}
+
+.txt-sobre{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.especialidades .txt-sobre span{
+    display: block;
+
+}
+
+.sobre-paragrafo {
+    font-size: 20px;
+    margin: 20px 16px;
+    text-align: justify;
+}
+
+.card-box p{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 8px;
+
+}
+
+
+
+/* Projetos */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+
+}
+
+.portfolio_final{
+    margin: 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+}
+
+
+.projeto{
+    width: 360px;
+    height:460px ;
+    background-color: aqua;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+   
+}
+
+.projeto:hover{
+    background-position: 100% 100%;
+    
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000008c2;
+    border-radius: 40px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+/* Formulario */
+
+section .formulario{
+    padding: 40px 4%  ;
+}
+
+form{
+    max-width: 500px;
+    margin: 0   auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+ form input, form textarea{
+    width: 100%;
+    background-color: #414040bb;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;  
+    color: #FFF2E7;
+    font-size: 18px; 
+   
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input[type=submit]{
+    width: 120px;
+    background-color: #FFF2E7;
+    color: #000000;
+    font-weight:700;
+    cursor: pointer;
+    transition: 0.2s;
+    
+
+}
+
+/* Rodapé */
+
+footer{
+    
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    
+}
+
+
+
+.redes-sociais{
+    margin-bottom: 0px;
+}
+
+.redes-sociais button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: 0.2s;    
+}
+
+footer .flex{
+    justify-content:center;
+
+}
+
+@media screen  and (max-width: 1020px){
+    /* Classe geral */
+
+    .flex{
+        flex-direction: column;
+    }
+    
+    .bella{
+        margin-top: 50px;
+        width: 60%;
+        height: 60%;
+        border-radius: 30%;
+    }
+
+    .sobre-paragrafo {
+        font-size: 18px;
+        margin: 20px 16px;
+        text-align: justify;
+    }
+
+    .projeto{
+        width: 310px;
+    height:400px ;
+    margin: 20px 30px 0px 0px ;
+    }
+
+    .txt-sobre{
+        font-size: 30px;
+    }
+
+
+    /* Cabeçalho */
+    .menu-desktop{
+        display: none;
+    }
+}
+
+
+
+
+
