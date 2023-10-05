@@ -9,9 +9,12 @@
 }
 
 body{
-   /* background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);*/
+   /* background: <a href="https://www.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_11712558.htm#query=dark%20background&position=0&from_view=keyword&track=ais">Image by benzoix</a> on Freepik*/
     font-size: 100%;
-    background-color: black;
+    background-image: url(./assets/fundo1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
 
 }
 
@@ -26,10 +29,17 @@ button:hover, form .btn-enviar input:hover{
     margin: auto;
     padding: 40px 4%;
 }
+
+.flex{
+    margin: 0 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
 .logo{
-    width: 200px;
-    height: 200px; 
-    border-radius: 40%;   
+    width: 150px;     
+    border-radius: 50%;   
           
 }
 
@@ -38,9 +48,7 @@ header > .interface{
     align-items: center;
     justify-content: space-between;
 }
-/* Estiloo cabeçalho */
-
-
+/* Estilo cabeçalho */
 
 header a{
     color: #fff2e73a;
@@ -50,8 +58,8 @@ header a{
     
 }
 
-header a:hover{
-    color: #fff2e7;
+header nav.menu-desktop a:hover{
+    color:#f1c40f;
     transform: scale(1.08);
     
 }
@@ -62,32 +70,95 @@ header nav ul{
     
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding:20px 40px;
     font-size: 20px;
 }
-/* parte central */
 
-.bella{
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
+/* Estilo menu mobile */
+.menu-mobile{
+    background-color:#000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.2s;
 }
 
-.destaque{
-   /* border-top: 0.6px solid #FFF2E7;*/
+.menu-mobile.abrir-mobile{
+    width: 70%;
+}
+
+.menu-mobile.abrir-mobile~ .overlay-menu{
+    display: block;
+}
+
+ .abrir-menu i{
+    color: #fca311;
+    font-size: 42px;
+}
+
+.menu-mobile .btn-fechar{
+    font-size: 30px;
+    color: #fca311;
+    padding: 20px 4%;
+    margin-right: 200px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #FFF2E7;
+    font-size: 20px;
+    font-weight:300;
+    padding: 20px 4%;
+    display: block;
+    padding: 20px 8%;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color:#fca311;
+}
+
+.overlay-menu{
+    background-color: #0000008a;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+/* parte central */
+
+.h1{
+    color: #FFF2E7;
+}
+
+section.destaque{
     margin-bottom: 48px;
-    padding: 20px;
+    padding: 40px 4%;
+}
+
+.section.destaque .flex{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap:20px;
     flex-wrap: wrap;
+}    
    
-}
 
 .name-destaque{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 32px;
     color: #FFF2E7;
 }
@@ -109,51 +180,43 @@ header nav ul li{
 }
 
 .desenho{
-    width: 28vw;
-    height: 60vh;
+    width: 35vw;
+    height: 50vh;
     padding: 18px;
-    border-radius: 25%;
-}
+    }
 
- .destaque .bella img{
+ .destaque .desenho img{
     position: relative;
-    animation: flutuar 2s;
-    
-    
+    animation: flutuar 1.8s ease-in-out infinite alternate;
+         
 }
 
-@keyframes flut{
+@keyframes flutuar{
     0%{
         top: 0;
     }
     100%{
-        top: 30px;
+        top: 40px;
     }
 }
 
 .especialidades{
-    padding: 40px 4%;
+    padding: 18px 4%;
     color: #FFF2E7;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+    font-weight: 400;
 }
 
 .especialidades .card-box i{
     font-size: 48px;
 }
 
-.flex{
-    margin: 0 0;
-    display: flex;
-    justify-content: space-around;
-    
-}
-
 /* Seção2 */
  .img-sobre img{
     width: 28vw;
-    height: 60vh;
+    height: 70vh;
     padding: 18px;
-    border-radius: 15%;
+    border-radius: 15% 15% 20%;
 }
 
 .txt-sobre{
@@ -177,16 +240,13 @@ header nav ul li{
     text-transform: uppercase;
     font-size: 18px;
     margin-top: 8px;
-
 }
-
-
 
 /* Projetos */
 
 section.portfolio{
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #ffffff2f;
 
 }
 
@@ -195,15 +255,14 @@ section.portfolio{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 25px;
-    
+    gap: 25px;    
 }
 
 
 .projeto{
     width: 360px;
     height:460px ;
-    background-color: aqua;
+    background-color:#000;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -238,10 +297,15 @@ section.portfolio{
 .overlay:hover{
     opacity: 1;
 }
+
+.projeto a{
+    color: #FFF2E7;
+    
+}
 /* Formulario */
 
 section .formulario{
-    padding: 40px 4%  ;
+    padding: 40px 4%;
 }
 
 form{
@@ -291,12 +355,8 @@ form .btn-enviar input[type=submit]{
 /* Rodapé */
 
 footer{
-    
-    box-shadow: 0 0 40px 10px #ffffff1d;
-    
+        box-shadow: 0 0 40px 10px #ffffff1d;
 }
-
-
 
 .redes-sociais{
     margin-bottom: 0px;
@@ -320,17 +380,20 @@ footer .flex{
 
 @media screen  and (max-width: 1020px){
     /* Classe geral */
-
     .flex{
         flex-direction: column;
     }
-    
-    .bella{
-        margin-top: 50px;
-        width: 60%;
-        height: 60%;
-        border-radius: 30%;
+
+    .destaque .flex{
+        flex-direction: column-reverse;
     }
+
+    /* Cabeçalho */
+    section.destaque{
+        padding: 15px 4%;
+    } 
+
+    /* seção1 */
 
     .sobre-paragrafo {
         font-size: 18px;
@@ -338,8 +401,14 @@ footer .flex{
         text-align: justify;
     }
 
+    .img-sobre img{
+        width: 80%;
+        padding: 18px;
+        border-radius: 15% 15% 20%;
+    }
+
     .projeto{
-        width: 310px;
+    width: 310px;
     height:400px ;
     margin: 20px 30px 0px 0px ;
     }

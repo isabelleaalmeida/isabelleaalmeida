@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Minha apresentação pessoal"
-     
-      <!-- tag para inserirmos icones de uma lib externa no nosso HTML -->
+           
       <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,87 +18,69 @@
 <body>
     <header>
        <div class="interface">
-        ,<img src="/assets/logo.png" class="logo" alt="Minha logo">
-        
+        <img src="./assets/logo.png" class="logo" alt="Minha logo">
+                         
         <nav class="menu-desktop">
             <ul>
-                <li> <a href="#sobre" class="sub-link1">Sobre</a></li>
-                <li><a href="#formacao" class="sub-link2">Formação</a></li>
-                <li><a href="#projetos" class="sub-link3">Projetos</a></li>
-                <li> <a href="#contato" class="sub-link4">Contato</a></li>
+                <li> <a href="#sobre">Sobre</a></li>
+                <li><a href="https://isabelleaalmeida.github.io/pratica-curriculo/">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li> <a href="#contato">Contato</a></li>
             </ul>
           
         </nav>
+        <div class="abrir-menu" id="btn-abrir">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="#sobre">Sobre</a></li>
+                    <li><a href="https://isabelleaalmeida.github.io/pratica-curriculo/" target="_blank">Formação</a></li>                    
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+              
+            </nav>
+        </div><!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
        </div> <!--interface-->
     </header>
 
     <main>
         <div>
             <section class="destaque">
-                <div class="name-destaque">
-                    <h1>Olá, sou a Isabelle Almeida</h1>
-                    <h2 class="subtitulo">Desenvolvedora Front-End</h2>
-                    <a href="./assets/Isabelle Almeida.cv.pdf" target="_blank"><button class="btn-contato">Download CV</button></a>
-                                       
-                </div>
-                <img src="./assets/img1.jpg"/ alt="Desenho mulher " class="desenho"> 
-                
-                    
-            </section>
-            
-            <section class="especialidades">
-                <div class="flex">                   
-                                    
-                    <div class="flex">
-                        <div class="card-box">
-                            <i class="bi bi-code"></i>
-                            <!--<h3>Projetos</h3>
-                            <p>Cofira aqui meus princiais Projetos</p>
-                            <div class="card-text">
-                                <ul>
-                                    <li>
-                                      <p class="lista-titulo">Calculadora média</p>
-                                      <a href="https://isabellealmeida-project.netlify.app/" target="_blank" class="link">Calculadora JS </a>
-                                     
-                                    </li>
-                                    <li>
-                                      <p class="lista-titulo">Games Clássicos</p>
-                                      <a href="https://editor.p5js.org/Belledev/full/28-6wlvD7" target="_blank" class="link">Jogo Freeway</a>
-                                      <p><a href="https://scratch.mit.edu/projects/776117497" target="_blank" class="link">Jogo Pong</a></p>
-                                     
-                                    </li>
-                                    <li>
-                                      <p class="lista-titulo">Games Clássicos</p>
-                                      <a href="https://editor.p5js.org/Belledev/full/28-6wlvD7" target="_blank" class="link">Jogo Freeway</a>
-                                      <p><a href="https://scratch.mit.edu/projects/776117497" target="_blank" class="link">Jogo Pong</a></p>
-                                     
-                                    </li>
-                                    <li>
-                                      <p class="lista-titulo">Games Clássicos</p>
-                                      <a href="https://editor.p5js.org/Belledev/full/28-6wlvD7" target="_blank" class="link">Jogo Freeway</a>
-                                      <p><a href="https://scratch.mit.edu/projects/776117497" target="_blank" class="link">Jogo Pong</a></p>
-                                     
-                                    </li>
-                                  </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    !-->
-                       
-            </section>
-
-            <sectio class="especialidades">
                 <div class="flex">
-                    <div class="img-sobre">
-                        <img src="./assets/me.jpg" class="bella" >                       
+                    <div class="name-destaque">
+                        <h1>Olá, sou a Isabelle Almeida</h1>
+                        <h2 class="subtitulo">Desenvolvedora Front-End</h2>
+                        <a href="./assets/Isabelle Almeida cv.pdf" target="_blank"><button class="btn-contato">Download CV</button></a>
+                                           
                     </div>
+                    <div class="desenho">
+                        <img src="./assets/foto1.png" alt="Foto Mulher negra" >
+                    </div>
+                        
+                 
+                </section>  
+                </div>       
+                    
+            <section class="especialidades">
+                <div class="flex">
+                   <div>
+                    <div class="img-sobre">
+                        <img src="./assets/me.jpg" class="" >                       
+                    </div>
+                   </div>
                     <div id="sobre">
                         <h2 class="txt-sobre">
                             Muito prazer,<span>Sou a Isabelle Almeida.</span>
                         </h2>
                         <p class="sobre-paragrafo">
-                        Sou contadora e atualmente estou em transição de carreira, com enfâse nos estudos para desenvolvimento front-end.
+                        Sou contadora e atualmente estou em transição de carreira, com ênfase nos estudos para desenvolvimento front-end.
                         Apaixonada pelo conhecimento, estou cursando Análise e Desenvolvimento de Sistemas, também já fiz diversos cursos livres na área de desenvolvimento web.
                         Sou aluna do ElasnaTech na formação em tecnologia Front-end. Possuo noções de JavaScript, HTML, CSS, Python e Bootstrap.
                         </p>
@@ -113,33 +94,35 @@
 
                 </div>
 
-            </sectio> <!--sobre-->
+            </section> <!--sobre-->
 
             <section class="portfolio">
                 <div class="especialidades">
-                    <h2 class="txt-sobre">
-                        Meu Portfólio
-                    </h2>
-                    <div class="portfolio_final">
-                        <div class="projeto" style="background-image: url(./assets/curriculo.png);">
-                            <div class="overlay">Projeto1</div>
+                    <div id="projetos">
+                        <h2 class="txt-sobre">
+                            Meu Portfólio
+                        </h2>
+                        <div class="portfolio_final">
+                            <div class="projeto" style="background-image: url(./assets/curriculo.png);">
+                                <div class="overlay"><a href="https://isabelleaalmeida.github.io/pratica-curriculo/" target="_blank">Projeto1</a></div>
+                            </div>
+                            <div class="projeto" style="background-image: url(./assets/Contatos.png);">
+                                <div class="overlay"><a href="https://isabelleaalmeida.github.io/Lista-contatos/" target="_blank">Projeto2</a></div>
+                            </div>
+                            <div class="projeto" style="background-image: url(./assets/freeway.png);">
+                                <div class="overlay"><a href="https://editor.p5js.org/Belledev/full/28-6wlvD7" target="_blank">Projeto 3</a></div>
+                            </div>
+                            <div class="projeto" style="background-image: url(./assets/calculadora.png);">
+                                <div class="overlay"><a href="https://isabellealmeida-project.netlify.app/" target="_blank">Projeto 4</a></div>
+                            </div>
+                            <div class="projeto" style="background-image: url(./assets/ODS.png);">
+                                <div class="overlay"><a href="https://isabelleaalmeida.github.io/ODS02/" target="_blank">Projeto 5</a></div>
+                            </div>
+                            <div class="projeto" style="background-image: url(./assets/port1.png);">
+                                <div class="overlay"><a href="https://isabellealmaida-portfolio.netlify.app/" target="_blank">Projeto 6</a></div>
+                            </div>
+    
                         </div>
-                        <div class="projeto" style="background-image: url(./assets/curriculo.png);">
-                            <div class="overlay">Projeto 2</div>
-                        </div>
-                        <div class="projeto" style="background-image: url(./assets/curriculo.png);">
-                            <div class="overlay">Projeto 3</div>
-                        </div>
-                        <div class="projeto" style="background-image: url(./assets/curriculo.png);">
-                            <div class="overlay">Projeto 3</div>
-                        </div>
-                        <div class="projeto" style="background-image: url(./assets/curriculo.png);">
-                            <div class="overlay">Projeto 3</div>
-                        </div>
-                        <div class="projeto" style="background-image: url(./assets/curriculo.png);">
-                            <div class="overlay">Projeto 3</div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -150,14 +133,14 @@
                     <div class="interface">
                        <div class="especialidades">
                         <h2 class="txt-sobre">
-                            Fala comigo.
+                            Entra em contato.
                         </h2>
 
-                        <form action="">
-                            <input type="text" name=" " id="" placeholder="Seu nome completo:" required>
-                            <input type="text" name=" " id="" placeholder="Seu email:" required>
-                            <input type="text" name=" " id="" placeholder="Seu celular: (xx) xxxxx-xxxx">
-                            <textarea name="" id="" placeholder=" Digite sua mensagem:" required></textarea>
+                        <form action="envio.php" method="post">
+                            <input type="text" name="nome" id="" placeholder="Seu nome completo:" required>
+                            <input type="text" name="email" id="" placeholder="Seu email:" required>
+                            <input type="text" name="telefone" id="" placeholder="Seu celular: (xx) xxxxx-xxxx">
+                            <textarea name="msg" id="" placeholder=" Digite sua mensagem:" required></textarea>
                             <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
 
                         </form>
@@ -170,7 +153,6 @@
             </section><!--Formulário-->
     
         </div>
-        
     </main>
 
     <footer>
@@ -186,13 +168,11 @@
     
                 </div>
             </div>
-            
-
         </div>
 
     </footer>
 
-    <script src="menu.js">
+    <script src="menu.js" defer>
         
     </script>
     
