@@ -9,9 +9,8 @@
 }
 
 body{
-   /* background: <a href="https://www.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_11712558.htm#query=dark%20background&position=0&from_view=keyword&track=ais">Image by benzoix</a> on Freepik*/
     font-size: 100%;
-    background-image: url(./assets/fundo1.jpg);
+    background-color: #000;
     background-repeat: no-repeat;
     background-size:cover;
     
@@ -440,6 +439,7 @@ footer .flex{
         display: none;
     }
 }
+
 
 
 
