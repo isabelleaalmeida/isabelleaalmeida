@@ -1,13 +1,11 @@
 # Projeto Final ElasnaTech  
 
-![gif introdução](https://media.giphy.com/media/SRrYel96fiJE5yw1Ib/giphy.gif)
-
 ## Sobre o projeto
 Link do projeto no ar:
 
-- [Meu Portfolio]()
+- [Meu Portfolio](https://isabelleaalmeida.github.io/isabelleaalmeida/)
 
-O projeto final é um portfólio feito em HTML, CSS e hospedado no netlify.
+O projeto final é um portfólio feito em HTML, CSS e hospedado no github pages.
 
 Ferramentas usadas:
 
@@ -15,14 +13,10 @@ Ferramentas usadas:
 
 ✓		Github como ferramenta de versionamento.
 
-✓		Netlify para realizarmos o Deploy da nossa aplicação.
+✓		Github pages para realizarmos o Deploy da nossa aplicação.
 
 <br>
-Link do Protótipo:
 
-- [link do protótipo do projeto final](https://www.figma.com/file/dykEV9jRKyK7K83CQ74zfP/Portfolio-Ciclo-Formativo-II---M%C3%B3dulo-I?node-id=0%3A1)
-
----
 
 
 ### Vamos nos conectar!
